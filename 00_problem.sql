@@ -91,14 +91,14 @@ where EMP_NAME NOT like '이%';
 		SALARY,
         JOB_CODE
 from	employee
-where JOB_CODE IN ('J2') AND SALARY > '2000000' OR JOB_CODE IN ('J7');
+where JOB_CODE IN ('J2') AND SALARY >= '2000000' OR JOB_CODE IN ('J7');
 
 -- 15번 문제
 select  EMP_NAME,
 		SALARY,
         JOB_CODE
 from	employee
-where	JOB_CODE IN ('J2') OR JOB_CODE IN ('J7') AND SALARY > '2000000';        
+where	JOB_CODE IN ('J2') OR JOB_CODE IN ('J7') AND SALARY >= '2000000';        
 		
 
         
